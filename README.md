@@ -10,5 +10,6 @@
 Это мой первый мод. А потому возможны баги, да и не всё идеально работает.
 
 Для работы книги, которая описывает весь мод, необходимо установить мод Patchouli любой версии из диапазона [1.16.4-48,1.16.4-53.1], желательно именно версию 1.16.4-53.1.
+
 Ссылка на скачивания Patchouli:https://www.curseforge.com/minecraft/mc-mods/patchouli/files?sort=totaldownloads&__cf_chl_jschl_tk__=pmd_6cdaf9cd3b0004b372b07a6006e5f94258c9c396-1628689246-0-gqNtZGzNAk2jcnBszQqi
 
