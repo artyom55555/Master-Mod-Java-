@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D D",
+		"DDD",
+		"DDD"
+	],
+	"key":{
+		"D":{
+			"item":"mastermod:dark_diamond"
+		}
+	},
+	"result": {
+		"item": "mastermod:chestplate_of_darkness",
+		"count": 1
+	}
+}

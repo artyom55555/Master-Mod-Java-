@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "mastermod:dense_cloud_block"
+		}
+	],
+	"result": {
+		"item": "mastermod:cloud_block",
+		"count": 9
+	}
+}

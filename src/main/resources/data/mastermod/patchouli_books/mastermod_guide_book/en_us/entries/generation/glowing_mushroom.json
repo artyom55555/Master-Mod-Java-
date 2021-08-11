@@ -1,0 +1,19 @@
+{
+    "name": "Освещают ваш путь",
+    "icon": "mastermod:glowing_mushroom_block",
+    "category": "mastermod:generation",
+    "sortnum" : 0,
+    "pages": [
+    	{
+    		"type":"patchouli:spotlight",
+        	"title": "Светящиеся грибы",
+        	"item":"mastermod:glowing_mushroom_block",
+    		"text": "Этот особый вид грибов частенько можно встретить под землёй, где они облюбовали свою излюбленныю среду обитания - обычный камень. Эти грибы излучают яркий свет и могут быть неплохим источником светящийся пыли и, как не странно, грибов."
+    	},
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:glowing_mushroom_block",
+        	"text": "На них действует ваша удача, а потому, чем выше её уровень, ... тем меньше грибов и больше светопыли вы получите."
+        }
+	]
+}

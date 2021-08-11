@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:book"
+		},
+		{
+			"item": "mastermod:piece_of_darkness"
+		}
+	],
+	"result": {
+		"item": "patchouli:guide_book",
+		"nbt": {
+			"patchouli:book": "mastermod:mastermod_guide_book"
+		}
+	}
+}

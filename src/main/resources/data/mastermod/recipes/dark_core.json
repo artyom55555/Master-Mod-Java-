@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"QDG",
+		"DSD",
+		"RDL"
+	],
+	"key":{
+		"D":{
+			"item":"mastermod:dark_diamond"
+		},
+		"S": {
+			"item":"minecraft:nether_star"
+		}
+		,
+		"Q": {
+			"tag":"forge:gems/quartz"
+		}
+		,
+		"G": {
+			"tag":"forge:dusts/glowstone"
+		}
+		,
+		"L": {
+			"tag":"forge:gems/lapis"
+		}
+		,
+		"R": {
+			"tag":"forge:dusts/redstone"
+		}
+	},
+	"result": {
+		"item": "mastermod:dark_core",
+		"count": 1
+	}
+}

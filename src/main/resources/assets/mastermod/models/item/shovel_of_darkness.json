@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures":{
+		"layer0": "mastermod:item/shovel_of_darkness"
+	}
+}

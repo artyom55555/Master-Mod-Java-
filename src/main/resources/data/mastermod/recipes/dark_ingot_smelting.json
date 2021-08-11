@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "mastermod:dark_ore"
+	},
+	"result": "mastermod:ingot_of_darkness",
+	"experience": 0.6,
+	"cookingtime": 200
+}

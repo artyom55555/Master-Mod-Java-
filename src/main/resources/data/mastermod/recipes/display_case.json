@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"III",
+		"DCD",
+		"III"
+	],
+	"key": {
+		"I": {
+			"item":"mastermod:ingot_of_darkness"
+		},
+		"D": {
+			"item":"mastermod:dark_diamond"
+		},
+		"C": {
+			"tag":"forge:chests/wooden"
+		}
+	},
+	"result": {
+		"item": "mastermod:display_case",
+		"count": 1
+	}
+}

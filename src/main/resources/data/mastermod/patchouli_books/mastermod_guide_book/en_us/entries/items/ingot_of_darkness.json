@@ -1,0 +1,29 @@
+{
+    "name": "Ещё прочнее и крепче",
+    "icon": "mastermod:ingot_of_darkness",
+    "category": "mastermod:items",
+    "sortnum" : 4,
+    "pages": [
+        {
+        	"type": "patchouli:spotlight",
+        	"title": "Тёмный металл",
+        	"item": "mastermod:ingot_of_darkness",
+        	"text": "После некоторых наблюдений вы заметили, что тёмные кусочки отлично взаимодействуют с золотом. Обработав ими благородный металл вам удалось получить что-то новое, невиданной доселе прочности."
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:dark_ingot_crafting",
+        	"text": "Стоит отметить, что благодаря податливости золотых слитков, вы можете получить сразу два тёмных слитка. Беда только в том, что для этого требуется много тёмных кусочков."
+        },
+        {
+        	"type": "patchouli:smelting",
+        	"recipe": "mastermod:dark_ingot_smelting",
+        	"text": "Тем не менее, руда уже содержит в себе частицы золота, а потому простая её переплавка позволит получить тот же слиток, правда, только один.$(br2)Как и любой другой металл, тёмные слитки можно объединить в блоки для компактного хранения."
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:block_of_dark_ingots",
+        	"recipe2": "mastermod:ingots_from_dark_block"
+        }
+    ]
+}

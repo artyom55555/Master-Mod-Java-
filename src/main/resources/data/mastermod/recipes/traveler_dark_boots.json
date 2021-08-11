@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ECE",
+		"EBE",
+		"F#F"
+	],
+	"key":{
+		"C":{
+			"item":"mastermod:dark_core"
+		},
+		"B":{
+			"item":"mastermod:boots_of_darkness"
+		},
+		"F":{
+			"item":"minecraft:rabbit_foot"
+		},
+		"#":{
+			"item":"minecraft:dragon_breath"
+		},
+		"E":{
+			"item":"minecraft:emerald"
+		}
+	},
+	"result": {
+		"item": "mastermod:traveler_dark_boots",
+		"count": 1
+	}
+}

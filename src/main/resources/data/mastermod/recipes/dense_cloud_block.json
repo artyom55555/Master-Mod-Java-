@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"CCC"
+	],
+	"key":{
+		"C":{
+			"item":"mastermod:cloud_block"
+		}
+	},
+	"result": {
+		"item": "mastermod:dense_cloud_block",
+		"count": 1
+	}
+}

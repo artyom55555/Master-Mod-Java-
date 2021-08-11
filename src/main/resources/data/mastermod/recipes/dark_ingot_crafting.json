@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PPP",
+		"PIP",
+		"PPP"
+	],
+	"key":{
+		"P":{
+			"item":"mastermod:piece_of_darkness"
+		},
+		"I": {
+			"tag":"forge:ingots/gold"
+		}
+	},
+	"result": {
+		"item": "mastermod:ingot_of_darkness",
+		"count": 2
+	}
+}

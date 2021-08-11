@@ -1,0 +1,41 @@
+{
+  "block.mastermod.golden_mushroom": "Золотой гриб",
+  "block.mastermod.dark_mushroom": "Тёмный гриб",
+  "block.mastermod.dark_ore": "Тёмная руда",
+  "block.mastermod.display_case": "Тёмный сундук",
+  "block.mastermod.block_of_dark_ingots": "Блок тёмного металла",
+  "block.mastermod.cloud_block": "Блок облака",
+  "block.mastermod.dense_cloud_block": "Плотный блок облака",
+  "block.mastermod.glowing_mushroom_block": "Светящиеся грибы",
+  
+  "item.mastermod.piece_of_darkness": "Кусочек тьмы",
+  "item.mastermod.ingot_of_darkness": "Тёмный металл",
+  "item.mastermod.dark_diamond": "Тёмный алмаз",
+  "item.mastermod.dark_core": "Тёмное ядро",
+  "item.mastermod.parachute": "Парашют",
+  "item.mastermod.dark_cube_spawn_egg": "Яйцо призыва тёмного куба",
+  
+  
+  "item.mastermod.sword_of_darkness": "Тёмный меч",
+  "item.mastermod.axe_of_darkness": "Тёмный топор",
+  "item.mastermod.picaxe_of_darkness": "Тёмная кирка",
+  "item.mastermod.hoe_of_darkness": "Тёмная мотыга",
+  "item.mastermod.shovel_of_darkness": "Тёмная лопата",
+  "item.mastermod.multitool_of_darkness": "Тёмный мультиинструмент",
+  
+  "item.mastermod.helmet_of_darkness": "Тёмный шлем",
+  "item.mastermod.chestplate_of_darkness": "Тёмный нагрудник",
+  "item.mastermod.leggigs_of_darkness": "Тёмные поножи",
+  "item.mastermod.boots_of_darkness": "Тёмные ботинки",
+  "item.mastermod.traveler_dark_boots": "Тёмные ботинки путешественника",
+  
+  "entity.mastermod.dark_cube": "Тёмный куб",
+  
+
+  "itemGroup.my_materials_group": "Материалы",
+  "itemGroup.my_blocks_group": "Блоки",
+  "itemGroup.my_tools_and_armor_group": "Инструменты и броня",
+  
+  "key.category.mastermod": "Master Mod",
+  "key.mastermod.example_key": "Тестовая кнопка (лучше не трогай)"
+}

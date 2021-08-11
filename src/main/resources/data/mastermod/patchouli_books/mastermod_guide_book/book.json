@@ -1,0 +1,7 @@
+{
+	"name": "Книга по Master Mod",
+	"landing_text": "Добро пожаловать в Master Mod. Его разнообразыне плюшки к вашим услугам!",
+	"version": 1,
+	"model": "mastermod:mastermod_guide_book",
+	"creative_tab": "my_materials_group"
+}

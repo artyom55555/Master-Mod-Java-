@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mastermod:blocks/dark_ore"
+  }
+}

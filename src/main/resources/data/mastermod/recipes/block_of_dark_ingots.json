@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"III",
+		"III",
+		"III"
+	],
+	"key":{
+		"I":{
+			"item":"mastermod:ingot_of_darkness"
+		}
+	},
+	"result": {
+		"item": "mastermod:block_of_dark_ingots",
+		"count": 1
+	}
+}

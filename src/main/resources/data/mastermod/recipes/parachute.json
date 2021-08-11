@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"D D",
+		" S "
+	],
+	"key":{
+		"D":{
+			"item":"mastermod:dense_cloud_block"
+		},
+		"S": {
+			"item": "minecraft:string"
+		}
+	},
+	"result": {
+		"item": "mastermod:parachute",
+		"count": 1
+	}
+}

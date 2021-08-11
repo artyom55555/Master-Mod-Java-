@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"D",
+		"D",
+		"S"
+	],
+	"key": {
+		"D":{
+			"item":"mastermod:dark_diamond"
+		},
+		"S": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "mastermod:sword_of_darkness",
+		"count": 1
+	}
+}

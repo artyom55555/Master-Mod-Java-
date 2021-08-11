@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" S ",
+		"ACP",
+		" # "
+	],
+	"key":{
+		"A":{
+			"item":"mastermod:axe_of_darkness"
+		},
+		"S":{
+			"item":"mastermod:shovel_of_darkness"
+		},
+		"P":{
+			"item":"mastermod:picaxe_of_darkness"
+		},
+		"C":{
+			"item":"mastermod:dark_core"
+		},
+		"#": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "mastermod:multitool_of_darkness",
+		"count": 1
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Режь, руби, коли, копай",
+    "icon": "mastermod:sword_of_darkness",
+    "category": "mastermod:items",
+    "sortnum" : 5,
+    "pages": [
+        {
+        	"type": "patchouli:spotlight",
+        	"title": "Тёмные инструменты",
+        	"item": "mastermod:sword_of_darkness",
+        	"text": "Вы не прогадали. Укрепить алмаз было действительно хорошей идеей. Вы быстро смекнули, что если из обычного алмаза получаются замечательные орудия, то из этого получатся ещё лучше! Полученные вами оружия и инструменты гораздо прочнее не только алмазных, но и незеритовых инструментов."
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:dark_sword",
+        	"recipe2": "mastermod:picaxe_of_darkness"
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:axe_of_darkness",
+        	"recipe2": "mastermod:shovel_of_darkness"
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:hoe_of_darkness",
+        	"text": "Они лучше во всём: урон, скорость копания, прочность. Правда, от них исходит какая-то злобная аура, но вас это уже совсем не волнует."
+        }
+    ]
+}

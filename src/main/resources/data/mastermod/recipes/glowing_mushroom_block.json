@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SGS",
+		"GMG",
+		"SGS"
+	],
+	"key":{
+		"S":{
+			"item":"minecraft:cobblestone"
+		},
+		"G":{
+			"item":"minecraft:glowstone"
+		},
+		"M":{
+			"item":"minecraft:brown_mushroom"
+		}
+	},
+	"result": {
+		"item": "mastermod:glowing_mushroom_block",
+		"count": 1
+	}
+}

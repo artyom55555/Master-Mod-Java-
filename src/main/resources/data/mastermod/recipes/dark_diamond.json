@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" I ",
+		"IDI",
+		" I "
+	],
+	"key":{
+		"D":{
+			"tag":"forge:gems/diamond"
+		},
+		"I": {
+			"item":"mastermod:ingot_of_darkness"
+		}
+	},
+	"result": {
+		"item": "mastermod:dark_diamond",
+		"count": 1
+	}
+}

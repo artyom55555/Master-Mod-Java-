@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:brown_mushroom"
+		},
+		{
+			"item": "mastermod:piece_of_darkness"
+		}
+	],
+	"result": {
+		"item": "mastermod:dark_mushroom",
+		"count": 2
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		" S ",
+		" S "
+	],
+	"key":{
+		"D":{
+			"item":"mastermod:dark_diamond"
+		},
+		"S": {
+			"tag": "forge:rods/wooden"
+		}
+	},
+	"result": {
+		"item": "mastermod:picaxe_of_darkness",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Блестит, но как-то иначе",
+    "icon": "mastermod:dark_diamond",
+    "category": "mastermod:items",
+    "sortnum" : 5,
+    "pages": [
+        {
+        	"type": "patchouli:spotlight",
+        	"title": "Тёмный алмаз",
+        	"item": "mastermod:dark_diamond",
+        	"text": "Хоть пока вы и не уверены, зачем вам это, но вам удалось укрепить тёмным металлом и без того прочный алмаз. Теперь, его, наверно, невозможно сломать."
+        },
+        {
+        	"type": "patchouli:crafting",
+        	"recipe": "mastermod:dark_diamond",
+        	"text": "Вероятно, вы очень скоро найдёте ему применение."
+        }
+    ]
+}
