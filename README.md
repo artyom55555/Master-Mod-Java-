@@ -8,7 +8,7 @@
  - Особый сундук, имеющий вместительность гораздо большую, чем двойной сундук. Помимо этого он способен отображать перед собой предмет (и его имя), находящийся в особом слоте этого сундука.
 ![alt text](https://github.com/EmptyLibra/Master-Mod-Java-/blob/master/readmeImage3.png)
  - Книгу, полностью описывающую данный мод и ещё многое другое.
-![alt text](https://github.com/EmptyLibra/Master-Mod-Java-/blob/master/readmeImage2.png)
+![alt text](https://github.com/EmptyLibra/Master-Mod-Java-/blob/master/screenForReadMe.PNG)
 
 Это мой первый мод, так что не судите строго, если собираетесь поиграть с ним)
 
