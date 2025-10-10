@@ -12,11 +12,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
@@ -50,6 +47,7 @@ public class HealingSwordItem extends SwordItem {
         public void appendHoverText(ItemStack stack, @Nullable World level, List<ITextComponent> tooltip,
                         ITooltipFlag flag) {
                 super.appendHoverText(stack, level, tooltip, flag);
-                tooltip.add(new TranslationTextComponent("item.mastermod.healing_sword.desc"));
+                tooltip.add(new TranslationTextComponent("item.mastermod.healing_sword.desc")
+                                .withStyle(TextFormatting.LIGHT_PURPLE));
         }
 }

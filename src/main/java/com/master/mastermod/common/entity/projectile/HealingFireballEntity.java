@@ -53,18 +53,22 @@ public class HealingFireballEntity extends Entity {
         public void tick() {
                 super.tick();
 
+                LivingEntity owner = this.getOwner();
                 if (!this.level.isClientSide) {
                         if (--this.lifetime <= 0) {
                                 this.remove();
                                 return;
                         }
+
+                        if (owner == null || !owner.isAlive()) {
+                                this.remove();
+                                return;
+                        }
+
+                        this.handleHealing(owner);
                 }
 
-                LivingEntity owner = this.getOwner();
                 if (owner == null || !owner.isAlive()) {
-                        if (!this.level.isClientSide) {
-                                this.remove();
-                        }
                         return;
                 }
 
