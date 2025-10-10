@@ -1,23 +1,23 @@
 {
-    "name": "Поместится всё",
+    "name": "Everything Fits",
     "icon": "mastermod:display_case",
     "category": "mastermod:items",
     "sortnum" : 7,
     "pages": [
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Тёмный сундук",
-        	"item": "mastermod:display_case",
-        	"text": "У вас уже так много всего, что к тому времени, когда вы найдёте нужную вам вещь среди горы сундуков, вы уже забудите, зачем она вам была нужна. Благодаря особым свойствам тёмного металла вам удалось создать сундук в разы вместительнее обычного и даже двойного сундука."
+                "type": "patchouli:spotlight",
+                "title": "Dark Chest",
+                "item": "mastermod:display_case",
+                "text": "You already own so much stuff that by the time you find what you need in your piles of chests, you forget why you were looking. Thanks to the peculiar properties of dark metal you crafted a chest many times larger than a regular or even a double chest."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:display_case",
-        	"text": "Более того. С помощью тёмных алмазов вы можите проецировать свет, исходящий от предмета в особом слоте этого сундука прямо в его специальное окошко. Что важно, отображается"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:display_case",
+                "text": "Moreover, dark diamonds let you project the light from the item in the special slot straight into the showcase window."
         },
         {
-        	"type": "patchouli:text",
-        	"text": "не только сам предмет, но и его название. Таким образом, можно организовать подписи к сундукам, переименовав нужным образом предмет в наковальне. Полученный результат стоил затраченных усилий."
+                "type": "patchouli:text",
+                "text": "Not only the item appears there, but also its name. That lets you label chests by renaming an item on an anvil. The end result was worth every effort."
         }
     ]
 }

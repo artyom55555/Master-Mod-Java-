@@ -1,18 +1,18 @@
 {
-    "name": "Разбежавшись, прыгну со скалы",
+    "name": "Take a Running Leap",
     "icon": "mastermod:parachute",
     "category": "mastermod:items",
     "sortnum" : 11,
     "pages": [
         {
-        	"type":"patchouli:spotlight",
-        	"title": "Парашют",
-        	"item":"mastermod:parachute",
-        	"text": "Кто бы мог подумать, что благодаря своей мягкости и небольшом весе плотные облака годятся для создания из них парашюта! Держа его в руках вы всё-ещё будите падать, зато гораздо медленнее."
+                "type":"patchouli:spotlight",
+                "title": "Parachute",
+                "item":"mastermod:parachute",
+                "text": "Who would have thought that dense clouds, thanks to their softness and light weight, are perfect for crafting a parachute! Hold it and you will still fall, just far more slowly."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:parachute"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:parachute"
         }
     ]
 }

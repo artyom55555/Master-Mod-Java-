@@ -1,5 +1,5 @@
 {
-	"name": "Предметы",
-	"description": "Предметы. Полезные и очень полезные.",
+        "name": "Items",
+        "description": "Items. Handy and incredibly handy.",
 	"icon": "mastermod:ingot_of_darkness"
 }

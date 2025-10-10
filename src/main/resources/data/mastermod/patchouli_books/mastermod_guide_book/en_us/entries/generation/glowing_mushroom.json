@@ -1,19 +1,19 @@
 {
-    "name": "Освещают ваш путь",
+    "name": "Lighting Your Path",
     "icon": "mastermod:glowing_mushroom_block",
     "category": "mastermod:generation",
     "sortnum" : 0,
     "pages": [
-    	{
-    		"type":"patchouli:spotlight",
-        	"title": "Светящиеся грибы",
-        	"item":"mastermod:glowing_mushroom_block",
-    		"text": "Этот особый вид грибов частенько можно встретить под землёй, где они облюбовали свою излюбленныю среду обитания - обычный камень. Эти грибы излучают яркий свет и могут быть неплохим источником светящийся пыли и, как не странно, грибов."
-    	},
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:glowing_mushroom_block",
-        	"text": "На них действует ваша удача, а потому, чем выше её уровень, ... тем меньше грибов и больше светопыли вы получите."
+                "type":"patchouli:spotlight",
+                "title": "Glowing Mushrooms",
+                "item":"mastermod:glowing_mushroom_block",
+                "text": "This peculiar variety often thrives underground where it prefers plain stone as its home. The mushrooms emit a bright glow and make a fine source of glowstone dust and, oddly enough, mushrooms."
+        },
+        {
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:glowing_mushroom_block",
+                "text": "Fortune affects them, so the higher the level, the fewer mushrooms and the more glowstone dust you will gather."
         }
-	]
+        ]
 }

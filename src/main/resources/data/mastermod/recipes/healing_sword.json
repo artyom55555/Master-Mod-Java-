@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DPD",
+    "PSP",
+    "DCD"
+  ],
+  "key": {
+    "D": {
+      "item": "mastermod:dark_diamond"
+    },
+    "P": {
+      "item": "mastermod:piece_of_darkness"
+    },
+    "S": {
+      "item": "mastermod:sword_of_darkness"
+    },
+    "C": {
+      "item": "mastermod:dark_core"
+    }
+  },
+  "result": {
+    "item": "mastermod:healing_sword"
+  }
+}
