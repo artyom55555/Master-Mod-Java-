@@ -27,24 +27,16 @@ public class HealingFireballEntity extends Entity {
         private static final DataParameter<Float> ORBIT_OFFSET = EntityDataManager.defineId(HealingFireballEntity.class,
                         DataSerializers.FLOAT);
         private static final int MAX_LIFETIME_TICKS = 120 * 20;
-        private static final int DECISION_DELAY_TICKS = 2 * 20;
-        private static final int CHECK_INTERVAL_TICKS = 20;
         private static final float ORBIT_RADIUS = 1.8F;
         private static final float HEAL_AMOUNT = 10.0F;
 
         private int lifetime;
-        private int decisionDelay;
-        private int decisionCooldown;
-        private boolean pendingDamageResponse;
 
         public HealingFireballEntity(EntityType<? extends HealingFireballEntity> type, World level) {
                 super(type, level);
                 this.noPhysics = true;
                 this.setNoGravity(true);
                 this.lifetime = MAX_LIFETIME_TICKS;
-                this.decisionDelay = DECISION_DELAY_TICKS;
-                this.decisionCooldown = 0;
-                this.pendingDamageResponse = false;
         }
 
         public HealingFireballEntity(World level) {
@@ -98,10 +90,6 @@ public class HealingFireballEntity extends Entity {
                 this.lifetime = tag.contains("Lifetime") ? tag.getInt("Lifetime") : MAX_LIFETIME_TICKS;
                 this.entityData.set(ORBIT_OFFSET,
                                 tag.contains("Offset") ? tag.getFloat("Offset") : this.random.nextFloat() * 360.0F);
-                this.decisionDelay = tag.contains("DecisionDelay") ? tag.getInt("DecisionDelay")
-                                : DECISION_DELAY_TICKS;
-                this.decisionCooldown = tag.contains("DecisionCooldown") ? tag.getInt("DecisionCooldown") : 0;
-                this.pendingDamageResponse = tag.getBoolean("PendingDamage");
         }
 
         @Override
@@ -109,9 +97,6 @@ public class HealingFireballEntity extends Entity {
                 this.getOwnerUUID().ifPresent(uuid -> tag.putUUID("Owner", uuid));
                 tag.putInt("Lifetime", this.lifetime);
                 tag.putFloat("Offset", this.entityData.get(ORBIT_OFFSET));
-                tag.putInt("DecisionDelay", this.decisionDelay);
-                tag.putInt("DecisionCooldown", this.decisionCooldown);
-                tag.putBoolean("PendingDamage", this.pendingDamageResponse);
         }
 
         @Override
@@ -126,9 +111,6 @@ public class HealingFireballEntity extends Entity {
 
         public void refreshLifetime() {
                 this.lifetime = MAX_LIFETIME_TICKS;
-                this.decisionDelay = DECISION_DELAY_TICKS;
-                this.decisionCooldown = 0;
-                this.pendingDamageResponse = false;
         }
 
         public void refreshOrbit() {
@@ -167,53 +149,8 @@ public class HealingFireballEntity extends Entity {
                 }
         }
 
-        public void notifyOwnerDamaged() {
-                if (this.level.isClientSide) {
-                        return;
-                }
-
-                if (this.decisionDelay <= 0) {
-                        this.decisionCooldown = 0;
-                } else {
-                        this.pendingDamageResponse = true;
-                }
-        }
-
         @Override
         public IPacket<?> getAddEntityPacket() {
                 return NetworkHooks.getEntitySpawningPacket(this);
-        }
-
-        private void handleHealing(LivingEntity owner) {
-                if (this.decisionDelay > 0) {
-                        --this.decisionDelay;
-                        return;
-                }
-
-                if (this.pendingDamageResponse) {
-                        this.decisionCooldown = 0;
-                        this.pendingDamageResponse = false;
-                }
-
-                if (this.decisionCooldown > 0) {
-                        --this.decisionCooldown;
-                        return;
-                }
-
-                if (this.shouldHealOwner(owner)) {
-                        this.healOwner(owner);
-                } else {
-                        this.decisionCooldown = CHECK_INTERVAL_TICKS;
-                }
-        }
-
-        private boolean shouldHealOwner(LivingEntity owner) {
-                float missingHealth = owner.getMaxHealth() - owner.getHealth();
-                return missingHealth >= HEAL_AMOUNT;
-        }
-
-        private void healOwner(LivingEntity owner) {
-                owner.heal(HEAL_AMOUNT);
-                this.consume();
         }
 }
