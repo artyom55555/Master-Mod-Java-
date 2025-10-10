@@ -19,6 +19,12 @@
       "item": "mastermod:dark_core"
     }
   },
+
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:iron_sword" },
+    { "item": "minecraft:ghast_tear" }
+  ],
   "result": {
     "item": "mastermod:healing_sword"
   }
