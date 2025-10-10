@@ -1,9 +1,9 @@
 package com.master.mastermod.client.entity;
 
-import com.master.mastermod.common.entity.projectile.HealingFireballEntity;
-
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
+
+import com.master.mastermod.common.entity.projectile.HealingFireballEntity;
 
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderType;
@@ -35,7 +35,8 @@ public class HealingFireballRenderer extends EntityRenderer<HealingFireballEntit
                 MatrixStack.Entry entry = matrixStack.last();
                 Matrix4f matrix4f = entry.pose();
                 Matrix3f matrix3f = entry.normal();
-                IVertexBuilder vertexBuilder = buffer.getBuffer(RenderType.entityCutout(this.getTextureLocation(entity)));
+                IVertexBuilder vertexBuilder = buffer
+                                .getBuffer(RenderType.entityCutoutNoCull(this.getTextureLocation(entity)));
                 vertex(vertexBuilder, matrix4f, matrix3f, packedLight, 0.0F, 0, 0, 1);
                 vertex(vertexBuilder, matrix4f, matrix3f, packedLight, 1.0F, 0, 1, 1);
                 vertex(vertexBuilder, matrix4f, matrix3f, packedLight, 1.0F, 1, 1, 0);
