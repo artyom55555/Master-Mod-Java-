@@ -20,7 +20,7 @@ public class HealingSwordItem extends SwordItem {
         public HealingSwordItem(IItemTier tier, int attackDamageModifier, float attackSpeedModifier, float healAmount,
                         Properties properties) {
                 super(tier, attackDamageModifier, attackSpeedModifier, properties);
-                this.healAmount = healAmount;
+               ц this.healAmount = healAmount;
         }
 
         @Override
