@@ -29,8 +29,12 @@ public class HealingFireballEntity extends Entity {
         private static final int MAX_LIFETIME_TICKS = 120 * 20;
         private static final float ORBIT_RADIUS = 1.8F;
         private static final float HEAL_AMOUNT = 10.0F;
+        private static final int HEAL_REEVALUATE_DELAY = 20;
+        private static final int HEAL_COOLDOWN_TICKS = 60;
 
         private int lifetime;
+        private int healDelayTicks;
+        private int healCooldownTicks;
 
         public HealingFireballEntity(EntityType<? extends HealingFireballEntity> type, World level) {
                 super(type, level);
@@ -137,6 +141,57 @@ public class HealingFireballEntity extends Entity {
                         return this.level.getPlayerByUUID(uuid.get());
                 }
                 return null;
+        }
+
+        private void handleHealing(LivingEntity owner) {
+                if (this.healCooldownTicks > 0) {
+                        this.healCooldownTicks--;
+                }
+
+                if (!this.shouldHealOwner(owner)) {
+                        this.resetHealDelay();
+                        return;
+                }
+
+                if (this.healDelayTicks > 0) {
+                        this.healDelayTicks--;
+                        return;
+                }
+
+                if (this.healCooldownTicks > 0) {
+                        return;
+                }
+
+                this.healOwner(owner);
+        }
+
+        private boolean shouldHealOwner(LivingEntity owner) {
+                return owner.getHealth() < owner.getMaxHealth();
+        }
+
+        private void healOwner(LivingEntity owner) {
+                float missingHealth = owner.getMaxHealth() - owner.getHealth();
+                if (missingHealth <= 0.0F) {
+                        this.resetHealDelay();
+                        return;
+                }
+
+                float healAmount = Math.min(this.getHealAmount(), missingHealth);
+                owner.heal(healAmount);
+                this.healCooldownTicks = HEAL_COOLDOWN_TICKS;
+                this.resetHealDelay();
+        }
+
+        private void resetHealDelay() {
+                this.healDelayTicks = HEAL_REEVALUATE_DELAY;
+        }
+
+        public void notifyOwnerDamaged() {
+                if (this.level.isClientSide) {
+                        return;
+                }
+
+                this.healDelayTicks = 0;
         }
 
         private Optional<UUID> getOwnerUUID() {
