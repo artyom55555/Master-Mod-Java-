@@ -1,23 +1,23 @@
 {
-    "name": "Всё и сразу",
+    "name": "Everything at Once",
     "icon": "mastermod:multitool_of_darkness",
     "category": "mastermod:items",
     "sortnum" : 9,
     "pages": [
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Мультиинструмент",
-        	"item": "mastermod:multitool_of_darkness",
-        	"text": "Что уж говорить, вам давно хотелось использовать один и тот же инстурмент для рубки дров, перекапывания земли и добычи руды, да всё как-то не было подходящего материала, который бы смог соеденить всё воедино. На ваше счастье тёмное ядро как раз обладает столь желанной вами силой."
+                "type": "patchouli:spotlight",
+                "title": "Multitool",
+                "item": "mastermod:multitool_of_darkness",
+                "text": "You have long dreamed of using the same tool to chop wood, till soil, and mine ore, but nothing could merge it all together. Luckily the dark core has exactly the kind of power you need."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:multitool_of_darkness",
-        	"text": "Получившийся инструмент способен действовать как кирка, лопата или топор, причём, благодаря тёмному ядру, исходная эффективность инструментов не чуть не изменилась, а итоговая прочность даже возрасла."
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:multitool_of_darkness",
+                "text": "The finished tool works as a pickaxe, shovel, or axe, and thanks to the dark core it loses none of their efficiency while gaining even more durability."
         },
         {
-        	"type": "patchouli:text",
-        	"text": "Кончено, вы хотели прикрепить сюда ещё и мотыгу, но ей банально не хватило места."
+                "type": "patchouli:text",
+                "text": "Of course you wanted to attach a hoe as well, but there simply was no room left for it."
         }
     ]
 }

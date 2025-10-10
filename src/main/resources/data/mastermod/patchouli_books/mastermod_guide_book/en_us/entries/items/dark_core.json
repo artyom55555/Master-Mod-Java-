@@ -1,19 +1,19 @@
 {
-    "name": "Самое сердце тьмы",
+    "name": "The Heart of Darkness",
     "icon": "mastermod:dark_core",
     "category": "mastermod:items",
     "sortnum" : 8,
     "pages": [
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Тёмное ядро",
-        	"item": "mastermod:dark_core",
-        	"text": "Вы чувствуете, что прочности ваших новых алмазов должно хватить для удержания невероятной силы, исходящей от загадочной звезды незера."
+                "type": "patchouli:spotlight",
+                "title": "Dark Core",
+                "item": "mastermod:dark_core",
+                "text": "You feel that the resilience of your new diamonds is enough to contain the unbelievable power radiating from the mysterious nether star."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:dark_core",
-        	"text": "То, что вы получили оказалось мощнее даже ваших самых смелых предположений. Уж с подобным материалом вам под силу создать действительно поразительные вещи, которые до вас ещё никто не был в состоянии создать."
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:dark_core",
+                "text": "What you forged exceeded even your boldest expectations. With a material like this you can craft truly astounding things no one else has managed before."
         }
     ]
 }

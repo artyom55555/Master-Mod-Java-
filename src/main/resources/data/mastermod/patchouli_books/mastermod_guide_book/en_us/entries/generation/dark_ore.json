@@ -1,24 +1,24 @@
 {
-    "name": "Сама тьма",
+    "name": "Darkness Itself",
     "icon": "mastermod:dark_ore",
     "category": "mastermod:generation",
     "sortnum" : 2,
     "pages": [
         {
-        	"type":"patchouli:spotlight",
-        	"title": "Тёмная руда",
-        	"item":"mastermod:dark_ore",
-        	"text": "В обычном мире эта руда крайне редка, а потому и ценна. Но ничто не мешает поискать её в других мирах. Её можно встретить глубоко под землёй, в самых тёмных уголках планеты. Пролежав слишком долго во тьме, сама стала её излучать. При нахождении на этом блоке ваше зрение затуманивается."
+                "type":"patchouli:spotlight",
+                "title": "Dark Ore",
+                "item":"mastermod:dark_ore",
+                "text": "In the overworld this ore is rare and thus precious, but nothing stops you from searching other realms. It lurks deep underground in the darkest corners of the planet. After lying in darkness for ages, it now radiates it. Standing on the block clouds your vision."
         },
         {
-        	"type":"patchouli:text",
-        	"text": "Осталось только понять, разбить её или переплавить как есть."
+                "type":"patchouli:text",
+                "text": "Now you only need to decide whether to break it or smelt it as is."
         },
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Кусочек тьмы",
-        	"item": "mastermod:piece_of_darkness",
-        	"text": "Кажется, сама тьма обрела форму и теперь вы можете держать её в своих руках. Это именно то, что выпадет вам из тёмной руды при обычных обстоятельствах. Эти кусочки крайне хорошо реагируют с золотом."
+                "type": "patchouli:spotlight",
+                "title": "Piece of Darkness",
+                "item": "mastermod:piece_of_darkness",
+                "text": "It seems darkness itself has taken shape and now rests in your hands. This is what normally drops from dark ore. These fragments react especially well with gold."
         }
     ]
 }

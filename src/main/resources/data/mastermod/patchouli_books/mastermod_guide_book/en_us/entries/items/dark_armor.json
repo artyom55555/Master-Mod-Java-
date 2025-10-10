@@ -1,28 +1,28 @@
 {
-    "name": "Тёмный с ног до головы",
+    "name": "Dark from Head to Toe",
     "icon": "mastermod:helmet_of_darkness",
     "category": "mastermod:items",
     "sortnum" : 6,
     "pages": [
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Тёмная броня",
-        	"item": "mastermod:helmet_of_darkness",
-        	"text": "Да, конечно, из тёмных алмазов можно сделать броню куда прочнее и качественнее незеритовой. Защитит и от взрыва и от голодного зомби."
+                "type": "patchouli:spotlight",
+                "title": "Dark Armor",
+                "item": "mastermod:helmet_of_darkness",
+                "text": "Indeed, you can forge armor from dark diamonds that puts even netherite to shame. It will spare you from explosions and hungry zombies alike."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:helmet_of_darkness",
-        	"recipe2": "mastermod:chestplate_of_darkness"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:helmet_of_darkness",
+                "recipe2": "mastermod:chestplate_of_darkness"
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:leggigs_of_darkness",
-        	"recipe2": "mastermod:boots_of_darkness"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:leggigs_of_darkness",
+                "recipe2": "mastermod:boots_of_darkness"
         },
          {
-        	"type": "patchouli:text",
-        	"text": "По поводу ботинок. У вас есть кое-какие дополнительные соображения на их счёт, но пока что они не осуществимы."
+                "type": "patchouli:text",
+                "text": "About those boots. You have a few extra ideas for them, but they are not feasible just yet."
         }
     ]
 }
