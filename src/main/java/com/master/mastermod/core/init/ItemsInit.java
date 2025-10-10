@@ -5,6 +5,7 @@ import com.master.mastermod.common.block.EnchantedFood;
 import com.master.mastermod.common.block.MyBlockItem;
 import com.master.mastermod.common.block.MyEnchantedBlockItem;
 import com.master.mastermod.common.item.CustomSpawnEggItem;
+import com.master.mastermod.common.item.HealingSwordItem;
 import com.master.mastermod.common.item.MyItem;
 import com.master.mastermod.common.material.CustomArmorVaterial;
 import com.master.mastermod.common.material.CustomToolMaterial;
@@ -17,6 +18,7 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.item.Food;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemTier;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ShovelItem;
@@ -187,9 +189,13 @@ public class ItemsInit {
 			() -> new ShovelItem(CustomToolMaterial.DARK_TOOL, 9, -3f,
 					new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP).fireResistant()));
 
-	public static final RegistryObject<Item> MULTITOOL_OF_DARKNESS = ITEMS.register("multitool_of_darkness",
-			() -> new MultiToolItem(CustomToolMaterial.DARK_MULTI_TOOL, 6, -3f,
-					new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP).fireResistant()));
+        public static final RegistryObject<Item> MULTITOOL_OF_DARKNESS = ITEMS.register("multitool_of_darkness",
+                        () -> new MultiToolItem(CustomToolMaterial.DARK_MULTI_TOOL, 6, -3f,
+                                        new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP).fireResistant()));
+
+        public static final RegistryObject<Item> HEALING_SWORD = ITEMS.register("healing_sword",
+                        () -> new HealingSwordItem(ItemTier.IRON, 3, -2.4f, 2.0f,
+                                        new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP)));
 
 	// Материал, в какой слот надевать, свойства
 	public static final RegistryObject<Item> HELMET_OF_DARKNESS = ITEMS.register("helmet_of_darkness",

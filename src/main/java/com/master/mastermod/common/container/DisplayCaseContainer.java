@@ -94,13 +94,15 @@ public class DisplayCaseContainer extends Container {
 		if (slot != null && slot.hasItem()) {
 			ItemStack stack1 = slot.getItem();
 			stack = stack.copy();
-			if (index < DisplayCaseTileEntity.slots
-					&& !this.moveItemStackTo(stack1, DisplayCaseTileEntity.slots, this.slots.size(), false)) {
-				return ItemStack.EMPTY;
-			}
-			if (!this.moveItemStackTo(stack1, 0, DisplayCaseTileEntity.slots, false)) {
-				return ItemStack.EMPTY;
-			}
+                        // Простыми словами: shift-клик из витрины кладёт предмет в инвентарь игрока,
+                        // а shift-клик из инвентаря игрока пытается вернуть его в витрину.
+                        if (index < DisplayCaseTileEntity.slots) {
+                                if (!this.moveItemStackTo(stack1, DisplayCaseTileEntity.slots, this.slots.size(), false)) {
+                                        return ItemStack.EMPTY;
+                                }
+                        } else if (!this.moveItemStackTo(stack1, 0, DisplayCaseTileEntity.slots, false)) {
+                                return ItemStack.EMPTY;
+                        }
 			if (stack1.isEmpty()) {
 				slot.set(ItemStack.EMPTY);
 			} else {
