@@ -1,5 +1,8 @@
 package com.master.mastermod.client.entity;
 
+import com.master.mastermod.MasterMod;
+import com.master.mastermod.common.entity.projectile.HealingFireballEntity;
+
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 
@@ -17,8 +20,8 @@ import net.minecraft.util.math.vector.Vector3f;
 
 public class HealingFireballRenderer extends EntityRenderer<HealingFireballEntity> {
 
-        private static final ResourceLocation TEXTURE = new ResourceLocation("minecraft",
-                        "textures/entity/projectiles/fireball.png");
+        private static final ResourceLocation TEXTURE = new ResourceLocation(MasterMod.MOD_ID,
+                        "textures/entity/healing_fireball.png");
         private static final float SCALE = 1.0F;
 
         public HealingFireballRenderer(EntityRendererManager manager) {
