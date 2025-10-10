@@ -22,7 +22,7 @@
   "item.mastermod.shovel_of_darkness": "Shovel of Darkness",
   "item.mastermod.multitool_of_darkness": "Dark Multitool",
   "item.mastermod.healing_sword": "Healing Sword",
-  "item.mastermod.healing_sword.desc": "Each strike heals its wielder.",
+  "item.mastermod.healing_sword.desc": "Each strike mends its wielder. Right-click to summon a healing fireball that shields you from the next hit, restoring five hearts at the cost of 1 level (15 s cooldown).",
 
   "item.mastermod.helmet_of_darkness": "Helmet of Darkness",
   "item.mastermod.chestplate_of_darkness": "Chestplate of Darkness",
@@ -31,6 +31,7 @@
   "item.mastermod.traveler_dark_boots": "Traveler's Dark Boots",
 
   "entity.mastermod.dark_cube": "Dark Cube",
+  "entity.mastermod.healing_fireball": "Healing Fireball",
 
   "itemGroup.my_materials_group": "Materials",
   "itemGroup.my_blocks_group": "Blocks",

@@ -6,12 +6,21 @@ import javax.annotation.Nullable;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.IItemTier;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+
+import com.master.mastermod.common.item.healing.HealingSwordAbility;
 
 public class HealingSwordItem extends SwordItem {
 
@@ -30,6 +39,11 @@ public class HealingSwordItem extends SwordItem {
                         attacker.heal(this.healAmount);
                 }
                 return damaged;
+        }
+
+        @Override
+        public ActionResult<ItemStack> use(World level, PlayerEntity player, Hand hand) {
+                return HealingSwordAbility.use(level, player, hand, this);
         }
 
         @Override
