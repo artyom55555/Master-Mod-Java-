@@ -1,29 +1,29 @@
 {
-    "name": "Ещё прочнее и крепче",
+    "name": "Stronger and Tougher",
     "icon": "mastermod:ingot_of_darkness",
     "category": "mastermod:items",
     "sortnum" : 4,
     "pages": [
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Тёмный металл",
-        	"item": "mastermod:ingot_of_darkness",
-        	"text": "После некоторых наблюдений вы заметили, что тёмные кусочки отлично взаимодействуют с золотом. Обработав ими благородный металл вам удалось получить что-то новое, невиданной доселе прочности."
+                "type": "patchouli:spotlight",
+                "title": "Dark Metal",
+                "item": "mastermod:ingot_of_darkness",
+                "text": "After some experiments you noticed that pieces of darkness react wonderfully with gold. By tempering the noble metal you created something new with unheard-of strength."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:dark_ingot_crafting",
-        	"text": "Стоит отметить, что благодаря податливости золотых слитков, вы можете получить сразу два тёмных слитка. Беда только в том, что для этого требуется много тёмных кусочков."
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:dark_ingot_crafting",
+                "text": "Thanks to the malleability of gold you can obtain two dark ingots at once. The downside is how many pieces of darkness the process consumes."
         },
         {
-        	"type": "patchouli:smelting",
-        	"recipe": "mastermod:dark_ingot_smelting",
-        	"text": "Тем не менее, руда уже содержит в себе частицы золота, а потому простая её переплавка позволит получить тот же слиток, правда, только один.$(br2)Как и любой другой металл, тёмные слитки можно объединить в блоки для компактного хранения."
+                "type": "patchouli:smelting",
+                "recipe": "mastermod:dark_ingot_smelting",
+                "text": "Even so, the ore already contains traces of gold, so a simple smelt yields the same ingot, though only one.$(br2)Like any metal, dark ingots can be compacted into blocks for storage."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:block_of_dark_ingots",
-        	"recipe2": "mastermod:ingots_from_dark_block"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:block_of_dark_ingots",
+                "recipe2": "mastermod:ingots_from_dark_block"
         }
     ]
 }

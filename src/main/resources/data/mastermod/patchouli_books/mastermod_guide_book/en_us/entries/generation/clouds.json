@@ -1,28 +1,28 @@
 {
-    "name": "Мягкие и хрупкие",
+    "name": "Soft yet Fragile",
     "icon": "mastermod:cloud_block",
     "category": "mastermod:generation",
     "sortnum" : 3,
     "pages": [
         {
-        	"type":"patchouli:spotlight",
-        	"title": "Облака",
-        	"item":"mastermod:cloud_block",
-        	"text": "Вам давно известно, что нагревание воды пораждает пар. А что,е сли нагреть очень много воды? Точнее, её аналог - снег. Что же, оказывается при наличии большого количества водяных поров образуется облако."
+                "type":"patchouli:spotlight",
+                "title": "Clouds",
+                "item":"mastermod:cloud_block",
+                "text": "You have long known that heating water creates steam. But what if you heat a lot of water? Or rather, its snowy counterpart? With enough vapor a cloud forms."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:cloud_block_from_snow",
-        	"text": "Полученный блок облака очень хрупкий и ломается при любом неосторожном движении, но если аккуратно присесть, то по нему даже можно ходить."
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:cloud_block_from_snow",
+                "text": "The resulting cloud block is extremely fragile and crumbles at the slightest misstep, but if you crouch carefully you can even walk on it."
         },
         {
-        	"type": "patchouli:text",
-        	"text": "Однако, имеется и другой способ его получения. Если встать на блок магмы и попытаться выбросить блок снега, то он, тут же испарившись, превратится в блок облака. Прадва, если вам нужно много блоков облака, то и стоять придётся долго, а это несколько больно, если у вас, конечно, нет ботинок.$(br2)Полученные блоки облака можно уплотнить для компактного хранения или же для чего-то более полезного."
+                "type": "patchouli:text",
+                "text": "There is another way to get it. Stand on a magma block and toss a snow block: it vaporizes at once and turns into a cloud block. It takes time - and hurts - unless you have boots.$(br2)Cloud blocks can be compacted for storage or for something more useful."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:dense_cloud_block",
-        	"recipe2": "mastermod:cloud_block"
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:dense_cloud_block",
+                "recipe2": "mastermod:cloud_block"
         }
     ]
 }

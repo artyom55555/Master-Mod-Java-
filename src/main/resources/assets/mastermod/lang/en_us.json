@@ -1,0 +1,41 @@
+{
+  "block.mastermod.golden_mushroom": "Golden Mushroom",
+  "block.mastermod.dark_mushroom": "Dark Mushroom",
+  "block.mastermod.dark_ore": "Dark Ore",
+  "block.mastermod.display_case": "Dark Chest",
+  "block.mastermod.block_of_dark_ingots": "Block of Dark Metal",
+  "block.mastermod.cloud_block": "Cloud Block",
+  "block.mastermod.dense_cloud_block": "Dense Cloud Block",
+  "block.mastermod.glowing_mushroom_block": "Glowing Mushrooms",
+
+  "item.mastermod.piece_of_darkness": "Piece of Darkness",
+  "item.mastermod.ingot_of_darkness": "Dark Metal",
+  "item.mastermod.dark_diamond": "Dark Diamond",
+  "item.mastermod.dark_core": "Dark Core",
+  "item.mastermod.parachute": "Parachute",
+  "item.mastermod.dark_cube_spawn_egg": "Dark Cube Spawn Egg",
+
+  "item.mastermod.sword_of_darkness": "Sword of Darkness",
+  "item.mastermod.axe_of_darkness": "Axe of Darkness",
+  "item.mastermod.picaxe_of_darkness": "Pickaxe of Darkness",
+  "item.mastermod.hoe_of_darkness": "Hoe of Darkness",
+  "item.mastermod.shovel_of_darkness": "Shovel of Darkness",
+  "item.mastermod.multitool_of_darkness": "Dark Multitool",
+  "item.mastermod.healing_sword": "Healing Sword",
+  "item.mastermod.healing_sword.desc": "Each strike heals its wielder.",
+
+  "item.mastermod.helmet_of_darkness": "Helmet of Darkness",
+  "item.mastermod.chestplate_of_darkness": "Chestplate of Darkness",
+  "item.mastermod.leggigs_of_darkness": "Leggings of Darkness",
+  "item.mastermod.boots_of_darkness": "Boots of Darkness",
+  "item.mastermod.traveler_dark_boots": "Traveler's Dark Boots",
+
+  "entity.mastermod.dark_cube": "Dark Cube",
+
+  "itemGroup.my_materials_group": "Materials",
+  "itemGroup.my_blocks_group": "Blocks",
+  "itemGroup.my_tools_and_armor_group": "Tools and Armor",
+
+  "key.category.mastermod": "Master Mod",
+  "key.mastermod.example_key": "Test Key (better not touch)"
+}
