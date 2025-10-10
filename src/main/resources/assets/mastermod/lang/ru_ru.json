@@ -22,6 +22,8 @@
   "item.mastermod.hoe_of_darkness": "Тёмная мотыга",
   "item.mastermod.shovel_of_darkness": "Тёмная лопата",
   "item.mastermod.multitool_of_darkness": "Тёмный мультиинструмент",
+  "item.mastermod.healing_sword": "Целебный меч",
+  "item.mastermod.healing_sword.desc": "Каждый удар исцеляет владельца.",
   
   "item.mastermod.helmet_of_darkness": "Тёмный шлем",
   "item.mastermod.chestplate_of_darkness": "Тёмный нагрудник",
