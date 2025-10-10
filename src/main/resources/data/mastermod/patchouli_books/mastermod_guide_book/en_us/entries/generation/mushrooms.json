@@ -1,39 +1,39 @@
 {
-    "name": "Сомнительное блюдо",
+    "name": "A Questionable Dish",
     "icon": "mastermod:golden_mushroom",
     "category": "mastermod:generation",
     "sortnum" : 1,
     "pages": [
-    	{
-    		"type":"patchouli:text",
-        	"title": "Странные грибы",
-    		"text": "Эти грибы обладают необычными свойствами и не все из них рекомендованы к употреблению."
-    	},
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Золотой гриб",
-        	"item": "mastermod:golden_mushroom",
-        	"text": "Сверкает и блестит. Этот гриб впитал в себя всю суть золотой руды. Не удивительно, ведь он чаще всего встречается именно около этого благородного металла. Растёт, впитывая в себя все необходимые питательные вещества."
+                "type":"patchouli:text",
+                "title": "Strange Mushrooms",
+                "text": "These fungi have unusual properties and not all of them are safe to eat."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:golden_mushroom",
-        	"text": "Весьма сытный и надолго утоляет голод. Также способен случайным образом наложить любой положительный эффект, однако, если съесть слишком много, то возможно появление тошноты."
+                "type": "patchouli:spotlight",
+                "title": "Golden Mushroom",
+                "item": "mastermod:golden_mushroom",
+                "text": "It glitters and gleams. This mushroom has absorbed the very essence of gold ore. No wonder it most often grows near that noble metal, drawing in all the nutrients it needs."
         },
         {
-        	"type": "patchouli:spotlight",
-        	"title": "Тёмный гриб",
-        	"item": "mastermod:dark_mushroom",
-        	"text": "Растёт в самой непроглядной тьме, накапливая её. Из-за скудности мест обитания этот гриб накопил крайне опасные для жизни вещества и потому не рекомендован к употреблению."
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:golden_mushroom",
+                "text": "It is quite filling and keeps hunger away for a long time. It can also grant a random positive effect, although eating too many may cause nausea."
         },
         {
-        	"type": "patchouli:crafting",
-        	"recipe": "mastermod:dark_mushroom",
-        	"text": "Однако, если вы всё-ещё хотите рискнуть, то стоит знать, что помимо тошноты, слепоты, головных болей и смерти... вы также можете получить солидный прилив жизненной энергии."
+                "type": "patchouli:spotlight",
+                "title": "Dark Mushroom",
+                "item": "mastermod:dark_mushroom",
+                "text": "It grows in absolute darkness, soaking it in. Because its habitat is so bleak, the mushroom has accumulated substances that are extremely dangerous to life and is therefore not recommended for consumption."
         },
         {
-    		"type":"patchouli:text",
-    		"text": "Всё-таки этот гриб выжил там, где ничто не способно выжить. Может, стоит рискнуть и откусить кусочек?$(br)$(br)Примечания: Интересно, что, теоретически, при поедании большого количества обоих грибов, можно получить все существующие эффекты. Если вы конечно это переживёте..."
-    	}
+                "type": "patchouli:crafting",
+                "recipe": "mastermod:dark_mushroom",
+                "text": "Still, if you want to take the risk, be aware that besides nausea, blindness, headaches, and death... you may also receive a hefty burst of vitality."
+        },
+        {
+                "type":"patchouli:text",
+                "text": "After all, this mushroom survived where nothing else could. Maybe it is worth daring to take a bite?$(br)$(br)Notes: Theoretically, by eating large amounts of both mushrooms you could experience every effect that exists - if you live through it..."
+        }
     ]
 }

@@ -22,6 +22,8 @@
   "item.mastermod.hoe_of_darkness": "Тёмная мотыга",
   "item.mastermod.shovel_of_darkness": "Тёмная лопата",
   "item.mastermod.multitool_of_darkness": "Тёмный мультиинструмент",
+  "item.mastermod.healing_sword": "Целебный меч",
+  "item.mastermod.healing_sword.desc": "Каждый удар лечит владельца. ПКМ: призывает вокруг вас целебный фаербол, который поглощает следующий урон и восстанавливает 5 сердец. Цена — 1 уровень, перезарядка 15 с.",
   
   "item.mastermod.helmet_of_darkness": "Тёмный шлем",
   "item.mastermod.chestplate_of_darkness": "Тёмный нагрудник",
@@ -30,6 +32,7 @@
   "item.mastermod.traveler_dark_boots": "Тёмные ботинки путешественника",
   
   "entity.mastermod.dark_cube": "Тёмный куб",
+  "entity.mastermod.healing_fireball": "Целебный фаербол",
   
 
   "itemGroup.my_materials_group": "Материалы",

@@ -2,6 +2,7 @@ package com.master.mastermod.core.util;
 
 import com.master.mastermod.MasterMod;
 import com.master.mastermod.client.entity.DarkCubeEntityRenderer;
+import com.master.mastermod.client.entity.HealingFireballRenderer;
 import com.master.mastermod.client.screen.DisplayCaseScreen;
 import com.master.mastermod.client.tileentityrender.DisplayCaseTileEntituRenderer;
 import com.master.mastermod.core.init.BlocksInit;
@@ -37,7 +38,9 @@ public class ClientEventBusSubscriber {
 		ClientRegistry.bindTileEntityRenderer(TileEntityTypesInit.DISPLAY_CASE_TILE_ENTITY_TYPE.get(),
 				DisplayCaseTileEntituRenderer::new);
 
-		RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.DARK_CUBE.get(), DarkCubeEntityRenderer::new);
+                RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.DARK_CUBE.get(), DarkCubeEntityRenderer::new);
+                RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.HEALING_FIREBALL.get(),
+                                HealingFireballRenderer::new);
 	}
 }
 
