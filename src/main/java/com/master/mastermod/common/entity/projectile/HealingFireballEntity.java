@@ -173,6 +173,19 @@ public class HealingFireballEntity extends Entity {
                 float healAmount = Math.min(this.getHealAmount(), missingHealth);
                 owner.heal(healAmount);
                 this.spawnHealEffects(owner);
+
+                if (this.level instanceof ServerWorld) {
+                        ServerWorld serverWorld = (ServerWorld) this.level;
+                        double heartY = owner.getY() + owner.getBbHeight() * 0.6D;
+                        serverWorld.sendParticles(ParticleTypes.HEART, owner.getX(), heartY, owner.getZ(), 6, 0.4D, 0.5D,
+                                        0.4D, 0.0D);
+                        serverWorld.sendParticles(ParticleTypes.EXPLOSION, this.getX(), this.getY(), this.getZ(), 1,
+                                        0.0D, 0.0D, 0.0D, 0.0D);
+                }
+
+                this.level.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.GENERIC_EXPLODE,
+                                SoundCategory.PLAYERS, 0.5F, 1.2F + (this.random.nextFloat() - 0.5F) * 0.4F);
+
                 this.remove();
         }
 
