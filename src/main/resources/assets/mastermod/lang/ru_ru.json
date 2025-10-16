@@ -24,6 +24,11 @@
   "item.mastermod.multitool_of_darkness": "Тёмный мультиинструмент",
   "item.mastermod.healing_sword": "Целебный меч",
   "item.mastermod.healing_sword.desc": "Каждый удар лечит владельца. ПКМ: призывает вокруг вас целебный фаербол, который поглощает следующий урон и восстанавливает 5 сердец. Цена — 1 уровень, перезарядка 15 с.",
+  "tooltip.mastermod.healing_sword.stage": "Стадия: %s",
+  "tooltip.mastermod.healing_sword.energy": "Энергия: %s/%s",
+  "tooltip.mastermod.healing_sword.kills": "Очищено душ: %s",
+  "message.mastermod.healing_sword.requirements": "Нужно %s очищенных душ и %s энергии для эволюции.",
+  "message.mastermod.healing_sword.upgraded": "Целебный меч достигает стадии %s!",
   
   "item.mastermod.helmet_of_darkness": "Тёмный шлем",
   "item.mastermod.chestplate_of_darkness": "Тёмный нагрудник",

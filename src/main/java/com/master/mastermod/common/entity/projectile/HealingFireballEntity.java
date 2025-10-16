@@ -15,9 +15,13 @@ import net.minecraft.network.IPacket;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 public class HealingFireballEntity extends Entity {
@@ -30,11 +34,9 @@ public class HealingFireballEntity extends Entity {
         private static final float ORBIT_RADIUS = 1.8F;
         private static final float HEAL_AMOUNT = 10.0F;
         private static final int HEAL_REEVALUATE_DELAY = 20;
-        private static final int HEAL_COOLDOWN_TICKS = 60;
 
         private int lifetime;
         private int healDelayTicks;
-        private int healCooldownTicks;
 
         public HealingFireballEntity(EntityType<? extends HealingFireballEntity> type, World level) {
                 super(type, level);
@@ -144,10 +146,6 @@ public class HealingFireballEntity extends Entity {
         }
 
         private void handleHealing(LivingEntity owner) {
-                if (this.healCooldownTicks > 0) {
-                        this.healCooldownTicks--;
-                }
-
                 if (!this.shouldHealOwner(owner)) {
                         this.resetHealDelay();
                         return;
@@ -155,10 +153,6 @@ public class HealingFireballEntity extends Entity {
 
                 if (this.healDelayTicks > 0) {
                         this.healDelayTicks--;
-                        return;
-                }
-
-                if (this.healCooldownTicks > 0) {
                         return;
                 }
 
@@ -178,12 +172,32 @@ public class HealingFireballEntity extends Entity {
 
                 float healAmount = Math.min(this.getHealAmount(), missingHealth);
                 owner.heal(healAmount);
-                this.healCooldownTicks = HEAL_COOLDOWN_TICKS;
-                this.resetHealDelay();
+                this.spawnHealEffects(owner);
+                this.remove();
         }
 
         private void resetHealDelay() {
                 this.healDelayTicks = HEAL_REEVALUATE_DELAY;
+        }
+
+        private void spawnHealEffects(LivingEntity owner) {
+                if (!(this.level instanceof ServerWorld)) {
+                        return;
+                }
+
+                ServerWorld serverLevel = (ServerWorld) this.level;
+                double fireballX = this.getX();
+                double fireballY = this.getY();
+                double fireballZ = this.getZ();
+
+                serverLevel.sendParticles(ParticleTypes.EXPLOSION, fireballX, fireballY, fireballZ, 1, 0.0D, 0.0D,
+                                0.0D, 0.0D);
+                serverLevel.playSound(null, fireballX, fireballY, fireballZ, SoundEvents.GENERIC_EXPLODE,
+                                SoundCategory.NEUTRAL, 0.4F, 1.4F + this.random.nextFloat() * 0.2F);
+
+                double heartY = owner.getY() + owner.getBbHeight() * 0.5D;
+                serverLevel.sendParticles(ParticleTypes.HEART, owner.getX(), heartY, owner.getZ(), 8, 0.5D, 0.5D, 0.5D,
+                                0.0D);
         }
 
         public void notifyOwnerDamaged() {
