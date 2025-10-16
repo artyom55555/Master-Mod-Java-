@@ -10,6 +10,7 @@ import com.master.mastermod.core.init.EntityTypesInit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.datasync.DataParameter;
@@ -18,6 +19,7 @@ import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 public class HealingFireballEntity extends Entity {
@@ -132,9 +134,21 @@ public class HealingFireballEntity extends Entity {
 
         @Nullable
         public LivingEntity getOwner() {
-                Optional<UUID> uuid = this.getOwnerUUID();
-                if (uuid.isPresent()) {
-                        return this.level.getPlayerByUUID(uuid.get());
+                Optional<UUID> ownerId = this.getOwnerUUID();
+                if (ownerId.isPresent()) {
+                        UUID uuid = ownerId.get();
+                        if (this.level instanceof ServerWorld) {
+                                Entity entity = ((ServerWorld) this.level).getEntity(uuid);
+                                if (entity instanceof LivingEntity) {
+                                        return (LivingEntity) entity;
+                                }
+                        } else {
+                                for (PlayerEntity player : this.level.players()) {
+                                        if (player.getUUID().equals(uuid)) {
+                                                return player;
+                                        }
+                                }
+                        }
                 }
                 return null;
         }
