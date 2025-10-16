@@ -172,6 +172,7 @@ public class HealingFireballEntity extends Entity {
 
                 float healAmount = Math.min(this.getHealAmount(), missingHealth);
                 owner.heal(healAmount);
+                this.spawnHealEffects(owner);
 
                 if (this.level instanceof ServerWorld) {
                         ServerWorld serverWorld = (ServerWorld) this.level;
@@ -190,6 +191,26 @@ public class HealingFireballEntity extends Entity {
 
         private void resetHealDelay() {
                 this.healDelayTicks = HEAL_REEVALUATE_DELAY;
+        }
+
+        private void spawnHealEffects(LivingEntity owner) {
+                if (!(this.level instanceof ServerWorld)) {
+                        return;
+                }
+
+                ServerWorld serverLevel = (ServerWorld) this.level;
+                double fireballX = this.getX();
+                double fireballY = this.getY();
+                double fireballZ = this.getZ();
+
+                serverLevel.sendParticles(ParticleTypes.EXPLOSION, fireballX, fireballY, fireballZ, 1, 0.0D, 0.0D,
+                                0.0D, 0.0D);
+                serverLevel.playSound(null, fireballX, fireballY, fireballZ, SoundEvents.GENERIC_EXPLODE,
+                                SoundCategory.NEUTRAL, 0.4F, 1.4F + this.random.nextFloat() * 0.2F);
+
+                double heartY = owner.getY() + owner.getBbHeight() * 0.5D;
+                serverLevel.sendParticles(ParticleTypes.HEART, owner.getX(), heartY, owner.getZ(), 8, 0.5D, 0.5D, 0.5D,
+                                0.0D);
         }
 
         public void notifyOwnerDamaged() {

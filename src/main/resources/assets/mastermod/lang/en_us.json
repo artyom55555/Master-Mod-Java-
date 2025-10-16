@@ -23,6 +23,11 @@
   "item.mastermod.multitool_of_darkness": "Dark Multitool",
   "item.mastermod.healing_sword": "Healing Sword",
   "item.mastermod.healing_sword.desc": "Each strike mends its wielder. Right-click to summon a healing fireball that shields you from the next hit, restoring five hearts at the cost of 1 level (15 s cooldown).",
+  "tooltip.mastermod.healing_sword.stage": "Stage: %s",
+  "tooltip.mastermod.healing_sword.energy": "Energy: %s/%s",
+  "tooltip.mastermod.healing_sword.kills": "Purified souls: %s",
+  "message.mastermod.healing_sword.requirements": "Requires %s purified souls and %s energy to evolve.",
+  "message.mastermod.healing_sword.upgraded": "The Healing Sword ascends to stage %s!",
 
   "item.mastermod.helmet_of_darkness": "Helmet of Darkness",
   "item.mastermod.chestplate_of_darkness": "Chestplate of Darkness",

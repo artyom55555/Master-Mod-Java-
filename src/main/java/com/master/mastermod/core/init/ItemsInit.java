@@ -194,7 +194,7 @@ public class ItemsInit {
                                         new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP).fireResistant()));
 
         public static final RegistryObject<Item> HEALING_SWORD = ITEMS.register("healing_sword",
-                        () -> new HealingSwordItem(ItemTier.IRON, 3, -2.4f, 2.0f,
+                        () -> new HealingSwordItem(ItemTier.IRON, 3, -2.4f,
                                         new Item.Properties().tab(MasterModItemGroups.MY_TOOLS_AND_ARMOR_GROUP)));
 
 	// Материал, в какой слот надевать, свойства
